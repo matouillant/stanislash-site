@@ -1,22 +1,101 @@
 :root {
-    --primary: #FFD700;
-    --dark: #121212;
-    --light: #f8f9fa;
+    --brand-yellow: #FFD72E;
+    --brand-red: #B22222;
+    --brand-blue: #2E6E9E; /* Le bleu du fond du logo */
+    --brand-light: #F5E6CC; /* Beige papier rétro */
+    --dark: #1A1A1A;
 }
 
-body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
-header { background: var(--dark); color: white; padding: 1.5rem 0; position: sticky; top: 0; z-index: 100; }
-nav { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: auto; }
-.logo { font-family: 'Bangers', cursive; font-size: 2.2rem; color: var(--primary); text-decoration: none; }
-.nav-links { list-style: none; display: flex; gap: 20px; padding: 0; }
-.nav-links a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
-.nav-links a:hover { color: var(--primary); }
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--brand-blue); /* Fond bleu texturé */
+    color: var(--dark);
+    line-height: 1.6;
+}
 
-section { padding: 60px 20px; max-width: 1000px; margin: auto; min-height: 70vh; }
-h1, h2 { font-family: 'Bangers', cursive; text-align: center; letter-spacing: 1.5px; }
+/* Header & Logo */
+header {
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-.card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 25px; border-left: 6px solid var(--primary); }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
 
-footer { background: var(--dark); color: white; padding: 40px 20px; text-align: center; margin-top: 40px; }
-.social-btn { background: white; color: var(--dark); padding: 8px 18px; border-radius: 25px; text-decoration: none; font-weight: bold; margin: 0 10px; transition: 0.3s; }
-.social-btn:hover { background: var(--primary); }
+.logo-img {
+    height: 80px; /* Ajuste selon ton fichier Stan.jpg */
+    transition: transform 0.3s;
+}
+
+.logo-img:hover { transform: rotate(-3deg) scale(1.1); }
+
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { 
+    text-decoration: none; 
+    color: var(--brand-red); 
+    font-weight: bold; 
+    text-transform: uppercase;
+    font-family: 'Bangers', cursive;
+    font-size: 1.2rem;
+}
+
+/* Sections Style "Papier" */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: var(--brand-light);
+    padding: 40px;
+    border-radius: 15px;
+    border: 4px solid white;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+    font-family: 'Bangers', cursive;
+    color: var(--brand-red);
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 0px var(--brand-yellow);
+}
+
+/* Cartes & Éléments */
+.card {
+    background: white;
+    border: 3px solid var(--brand-red);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: var(--brand-yellow);
+    color: var(--brand-red);
+    padding: 12px 25px;
+    border: 3px solid var(--brand-red);
+    font-family: 'Bangers', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.btn:hover { background: var(--brand-red); color: var(--brand-yellow); }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    font-weight: bold;
+}
