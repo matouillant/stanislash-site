@@ -1,9 +1,46 @@
-<section>
-    <h1>Contact</h1>
-    <form style="display: flex; flex-direction: column; gap: 15px;">
-        <input type="text" placeholder="Nom" style="padding: 10px; border: 2px solid var(--brand-blue);">
-        <input type="email" placeholder="Email" style="padding: 10px; border: 2px solid var(--brand-blue);">
-        <textarea placeholder="Votre message" rows="5" style="padding: 10px; border: 2px solid var(--brand-blue);"></textarea>
-        <button type="submit" class="btn">Envoyer le message</button>
-    </form>
-</section>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaniSlash | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header"></header>
+    <main>
+        <section>
+            <h1>CONTACT</h1>
+            <div class="grid-2">
+                <div>
+                    <h2>ÉCRIVEZ-NOUS !</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>NOM</label>
+                            <input type="text" placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label>EMAIL</label>
+                            <input type="email" placeholder="votre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>MESSAGE</label>
+                            <textarea rows="5" placeholder="Dites-nous tout..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">ENVOYER</button>
+                    </form>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 5rem;">✉️</div>
+                    <p>Pour toute demande de spectacle, d'atelier ou juste pour nous dire bonjour !</p>
+                    <p><strong>contact@stanislash-impro.fr</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="main-footer"></footer>
+    <script src="scripts.js"></script>
+    <script>initPage('contact.html');</script>
+</body>
+</html>

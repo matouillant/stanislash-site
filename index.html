@@ -1,24 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Stanislash | Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaniSlash | Accueil</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header id="main-header"></header>
-
     <main>
         <section>
-            <h1>Bienvenue chez Stanislash</h1>
-            <p>Le contenu unique de ma page est ici.</p>
+            <h1>L'ART DE L'IMPRÉVU !</h1>
+            <div class="grid-2">
+                <div>
+                    <h2>FIL D'ACTU</h2>
+                    <div class="card">
+                        <h3>Dernier Cabaret de la saison</h3>
+                        <p>Merci à tous pour cette année incroyable ! On se retrouve en septembre pour de nouvelles aventures.</p>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <img src="Stan.jpg" style="max-width: 80%; border-radius: 20px; border: 5px solid var(--brand-red);">
+                    <p>Rejoignez la troupe la plus déjantée de Nancy.</p>
+                    <a href="spectacles.html" class="btn">VOIR LES DATES</a>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer id="main-footer"></footer>
-
     <script src="scripts.js"></script>
+    <script>initPage('index.html');</script>
 </body>
 </html>

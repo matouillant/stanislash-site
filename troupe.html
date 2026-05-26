@@ -1,10 +1,38 @@
-<section>
-    <h1>La Troupe</h1>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-        <div class="card">
-            <img src="photo-sophie.jpg" style="width:100%; border-radius:5px;">
-            <h3>Sophie</h3>
-            <p>Improvisatrice émérite - accents ratés.</p>
-        </div>
-        </div>
-</section>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaniSlash | La Troupe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header"></header>
+    <main>
+        <section>
+            <h1>LA TROUPE</h1>
+            <div class="grid-3">
+                <div class="card">
+                    <div style="background: #ccc; height: 200px; border-radius: 10px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-family: 'Bangers';">PHOTO</div>
+                    <h3>SOPHIE</h3>
+                    <p>Reine des accents approximatifs et des chutes inattendues.</p>
+                </div>
+                <div class="card">
+                    <div style="background: #ccc; height: 200px; border-radius: 10px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-family: 'Bangers';">PHOTO</div>
+                    <h3>MARC</h3>
+                    <p>Expert en personnages historiques et en bruitages de forêt.</p>
+                </div>
+                <div class="card">
+                    <div style="background: #ccc; height: 200px; border-radius: 10px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-family: 'Bangers';">PHOTO</div>
+                    <h3>JULIE</h3>
+                    <p>Toujours un secret de famille à révéler au pire moment.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="main-footer"></footer>
+    <script src="scripts.js"></script>
+    <script>initPage('troupe.html');</script>
+</body>
+</html>
