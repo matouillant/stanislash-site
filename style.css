@@ -1,0 +1,22 @@
+:root {
+    --primary: #FFD700;
+    --dark: #121212;
+    --light: #f8f9fa;
+}
+
+body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
+header { background: var(--dark); color: white; padding: 1.5rem 0; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: auto; }
+.logo { font-family: 'Bangers', cursive; font-size: 2.2rem; color: var(--primary); text-decoration: none; }
+.nav-links { list-style: none; display: flex; gap: 20px; padding: 0; }
+.nav-links a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+.nav-links a:hover { color: var(--primary); }
+
+section { padding: 60px 20px; max-width: 1000px; margin: auto; min-height: 70vh; }
+h1, h2 { font-family: 'Bangers', cursive; text-align: center; letter-spacing: 1.5px; }
+
+.card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 25px; border-left: 6px solid var(--primary); }
+
+footer { background: var(--dark); color: white; padding: 40px 20px; text-align: center; margin-top: 40px; }
+.social-btn { background: white; color: var(--dark); padding: 8px 18px; border-radius: 25px; text-decoration: none; font-weight: bold; margin: 0 10px; transition: 0.3s; }
+.social-btn:hover { background: var(--primary); }
