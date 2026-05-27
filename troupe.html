@@ -1,35 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StaniSlash | La Troupe</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaniSlash | La Troupe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="main-header"></header>
+<header id="main-header"></header>
 
-    <main>
-        <section>
-            <h1>LES SLASHEURS</h1>
-            <div class="grid">
-                <div class="comedien-card">
-                    <img src="photo1.jpg" alt="Sophie">
-                    <h3>SOPHIE</h3>
-                    <p>La force tranquille (et les meilleurs accents).</p>
-                </div>
-                <div class="comedien-card">
-                    <img src="photo2.jpg" alt="Marc">
-                    <h3>MARC</h3>
-                    <p>Expert en bruitages et chutes improbables.</p>
-                </div>
-                </div>
-        </section>
-    </main>
+<div class="page-hero">
+  <h1>LES SLASHEURS</h1>
+  <p>Improvisateurs nancéiens, plus ou moins motivés les uns que les autres — mais tous passionnés.</p>
+  <svg class="page-wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,60 L0,60 Z" fill="#FEF9EE"/>
+  </svg>
+</div>
 
-    <footer id="main-footer"></footer>
+<section class="page-section">
+  <div class="container">
+    <h2 class="section-title">🎭 Les comédiens</h2>
+    <div class="members-grid" style="grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));">
 
-    <script src="scripts.js"></script>
-    <script>initPage('troupe.html');</script>
+      <div class="member-card">
+        <div class="member-avatar m-bg-1"><span>🦁</span></div>
+        <div class="member-info">
+          <h3>Sophie M.</h3>
+          <div class="member-role">Co-fondatrice · En scène depuis 2012</div>
+          <p class="member-bio">La force tranquille de la troupe. Capable d'un accent russe crédible en 2 secondes chrono, et d'une présence scénique qui remplit n'importe quelle salle.</p>
+          <span class="member-power">⚡ Accents</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-2"><span>🥁</span></div>
+        <div class="member-info">
+          <h3>Marc D.</h3>
+          <div class="member-role">Briseur de 4ème mur · 2013</div>
+          <p class="member-bio">Expert en bruitages et chutes totalement improbables. 400 matchs au compteur, toujours debout, jamais à court d'idée saugrenue.</p>
+          <span class="member-power">⚡ Bruitage</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-3"><span>🌪️</span></div>
+        <div class="member-info">
+          <h3>Inès R.</h3>
+          <div class="member-role">Deus Ex Machina · 2015</div>
+          <p class="member-bio">Elle peut jouer une pieuvre, un notaire et un aspirateur dans la même scène. Son corps est un instrument de chaos très précis.</p>
+          <span class="member-power">⚡ Physique</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-4"><span>🎩</span></div>
+        <div class="member-info">
+          <h3>Thomas B.</h3>
+          <div class="member-role">Maître des genres · 2014</div>
+          <p class="member-bio">Transforme n'importe quelle scène en western, polar ou tragédie shakespearienne. Les genres n'ont aucun secret pour lui.</p>
+          <span class="member-power">⚡ Narration</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-5"><span>🌈</span></div>
+        <div class="member-info">
+          <h3>Léa V.</h3>
+          <div class="member-role">Cheffe de gag · 2016</div>
+          <p class="member-bio">Spécialiste du "oui et" à toute épreuve. Aucune réplique ne la déstabilise. Elle accepte tout, et c'est souvent terriblement drôle.</p>
+          <span class="member-power">⚡ Réactivité</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-6"><span>🧲</span></div>
+        <div class="member-info">
+          <h3>Julien F.</h3>
+          <div class="member-role">Arbitre & Meneur · 2013</div>
+          <p class="member-bio">Gère le public, les catégories et les débordements avec une impassibilité légendaire. Le seul qui ne rit jamais sur scène — et c'est ce qui le rend si drôle.</p>
+          <span class="member-power">⚡ Gestion public</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-7"><span>🎸</span></div>
+        <div class="member-info">
+          <h3>Clara N.</h3>
+          <div class="member-role">Musicienne live · 2018</div>
+          <p class="member-bio">Accompagne les scènes en direct et improvise la BO au fur et à mesure. Piano, ukulélé, et si besoin, kazoo.</p>
+          <span class="member-power">⚡ Musique</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-8"><span>🚀</span></div>
+        <div class="member-info">
+          <h3>Romain G.</h3>
+          <div class="member-role">Recrue de choc · 2022</div>
+          <p class="member-bio">Benjamine de la troupe. Surpasse régulièrement les vétérans. Détesté affectueusement par tous les anciens.</p>
+          <span class="member-power">⚡ Énergie</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Rejoindre la Stanislash ?</h2>
+  <p>On organise régulièrement des stages de formation et on accueille de nouveaux improvisateurs motivés.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn btn-red">Nous écrire</a>
+    <a href="https://www.facebook.com/lastanislash/" class="btn btn-white">📘 Facebook</a>
+  </div>
+</div>
+
+<footer id="main-footer"></footer>
+<script src="scripts.js"></script>
+<script>initPage('troupe.html');</script>
 </body>
 </html>

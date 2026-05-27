@@ -1,29 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StaniSlash | Galerie</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaniSlash | Galerie</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:999; align-items:center; justify-content:center; padding:20px; }
+    .lightbox.open { display:flex; }
+    .lightbox-inner { background:white; border:3px solid var(--ink); border-radius:12px; padding:24px; max-width:600px; width:100%; text-align:center; box-shadow:8px 8px 0 var(--ink); position:relative; }
+    .lightbox-close { position:absolute; top:12px; right:12px; background:var(--red); color:white; border:none; font-family:'Bangers',cursive; font-size:1.2rem; padding:4px 12px; border-radius:4px; cursor:pointer; }
+    .lightbox-img { width:100%; aspect-ratio:4/3; border-radius:8px; border:2px solid var(--ink); margin-bottom:14px; display:flex; align-items:center; justify-content:center; font-size:5rem; }
+    .lightbox-caption { font-family:'Bangers',cursive; font-size:1.4rem; color:var(--blue); letter-spacing:1px; }
+    .lightbox-sub { font-size:0.85rem; color:#777; margin-top:4px; font-style:italic; }
+  </style>
 </head>
 <body>
-    <header id="main-header"></header>
-    <main>
-        <section>
-            <h1>GALERIE PHOTOS</h1>
-            <div class="grid-3">
-                <div style="background: #888; height: 250px; border-radius: 15px; border: 3px solid var(--brand-red);"></div>
-                <div style="background: #999; height: 250px; border-radius: 15px; border: 3px solid var(--brand-red);"></div>
-                <div style="background: #777; height: 250px; border-radius: 15px; border: 3px solid var(--brand-red);"></div>
-                <div style="background: #aaa; height: 250px; border-radius: 15px; border: 3px solid var(--brand-red);"></div>
-                <div style="background: #bbb; height: 250px; border-radius: 15px; border: 3px solid var(--brand-red);"></div>
-                <div style="background: #999; height: 250px; border-radius: 15px; border: 3px solid var(--brand-red);"></div>
-            </div>
-        </section>
-    </main>
-    <footer id="main-footer"></footer>
-    <script src="scripts.js"></script>
-    <script>initPage('galerie.html');</script>
+<header id="main-header"></header>
+
+<div class="page-hero">
+  <h1>GALERIE</h1>
+  <p>Quelques instants capturés sur scène — le reste, venez le vivre en vrai.</p>
+  <svg class="page-wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,60 L0,60 Z" fill="#FEF9EE"/>
+  </svg>
+</div>
+
+<section class="page-section">
+  <div class="container">
+    <h2 class="section-title">📸 Photos de spectacles</h2>
+    <div class="galerie-grid">
+
+      <div class="galerie-item gi-1" data-caption="Match d'impro 2025" data-sub="Salle Jacques Villeret, Nancy" data-emoji="🥊">
+        <div class="gi-placeholder"><span style="font-size:3rem;">🥊</span><span>Match d'impro</span></div>
+      </div>
+
+      <div class="galerie-item gi-2" data-caption="Sauvages ! — Première" data-sub="MJC Bazin, Nancy · Octobre 2024" data-emoji="🌪️">
+        <div class="gi-placeholder"><span style="font-size:3rem;">🌪️</span><span>Sauvages !</span></div>
+      </div>
+
+      <div class="galerie-item gi-3" data-caption="Cabaret de fin de saison" data-sub="Le Motel, Nancy · Juin 2024" data-emoji="🎪">
+        <div class="gi-placeholder"><span style="font-size:3rem;">🎪</span><span>Cabaret</span></div>
+      </div>
+
+      <div class="galerie-item gi-4" data-caption="Amnesia — Format long" data-sub="MJC Bazin, Nancy · Novembre 2021" data-emoji="🧠">
+        <div class="gi-placeholder"><span style="font-size:3rem;">🧠</span><span>Amnesia</span></div>
+      </div>
+
+      <div class="galerie-item gi-5" data-caption="Clara à la musique live" data-sub="Le Motel, Nancy · Mars 2025" data-emoji="🎸">
+        <div class="gi-placeholder"><span style="font-size:3rem;">🎸</span><span>Musique live</span></div>
+      </div>
+
+      <div class="galerie-item gi-6" data-caption="Catégorique ! — Match" data-sub="Salle Jacques Villeret · Avril 2025" data-emoji="🎯">
+        <div class="gi-placeholder"><span style="font-size:3rem;">🎯</span><span>Catégorique !</span></div>
+      </div>
+
+      <div class="galerie-item gi-7" data-caption="Les coulisses avant le show" data-sub="Behind the scenes · 2025" data-emoji="👀">
+        <div class="gi-placeholder"><span style="font-size:3rem;">👀</span><span>Coulisses</span></div>
+      </div>
+
+      <div class="galerie-item gi-8" data-caption="Stage de formation impro" data-sub="Vandœuvre-lès-Nancy · 2024" data-emoji="🎓">
+        <div class="gi-placeholder"><span style="font-size:3rem;">🎓</span><span>Stage impro</span></div>
+      </div>
+
+      <div class="galerie-item gi-9" data-caption="Fin de spectacle" data-sub="Saluts et applaudissements · 2025" data-emoji="🎭">
+        <div class="gi-placeholder"><span style="font-size:3rem;">🎭</span><span>Rideau final</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightbox-close">✕ Fermer</button>
+    <div class="lightbox-img" id="lightbox-img"></div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <div class="lightbox-sub" id="lightbox-sub"></div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.galerie-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.getElementById('lightbox-img').innerHTML = '<span style="font-size:6rem;">' + item.dataset.emoji + '</span>';
+    document.getElementById('lightbox-caption').textContent = item.dataset.caption;
+    document.getElementById('lightbox-sub').textContent = item.dataset.sub;
+    document.getElementById('lightbox').classList.add('open');
+  });
+});
+document.getElementById('lightbox-close').addEventListener('click', () => {
+  document.getElementById('lightbox').classList.remove('open');
+});
+document.getElementById('lightbox').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) e.currentTarget.classList.remove('open');
+});
+</script>
+
+<footer id="main-footer"></footer>
+<script src="scripts.js"></script>
+<script>initPage('galerie.html');</script>
 </body>
 </html>

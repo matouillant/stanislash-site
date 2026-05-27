@@ -1,33 +1,141 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StaniSlash | Spectacles</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaniSlash | Spectacles</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="main-header"></header>
-    <main>
-        <section>
-            <h1>NOS SPECTACLES</h1>
-            <div class="grid-2">
-                <div class="card">
-                    <h2>MATCH D'IMPRO</h2>
-                    <p>Deux équipes, un arbitre impitoyable, et VOS thèmes. Un classique indémodable.</p>
-                    <div class="btn">RÉSERVER</div>
-                </div>
-                <div class="card">
-                    <h2>LE CABARET</h2>
-                    <p>Format court, punchy et sans filet. Le chaos créatif à l'état pur.</p>
-                    <div class="btn">RÉSERVER</div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="main-footer"></footer>
-    <script src="scripts.js"></script>
-    <script>initPage('spectacles.html');</script>
+<header id="main-header"></header>
+
+<div class="page-hero">
+  <h1>NOS SPECTACLES</h1>
+  <p>Matchs d'impro, cabarets et formats longs — toujours inventé, jamais répété.</p>
+  <svg class="page-wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,60 L0,60 Z" fill="#FEF9EE"/>
+  </svg>
+</div>
+
+<section class="page-section">
+  <div class="container">
+    <h2 class="section-title">🗓 Prochaines dates</h2>
+    <div class="dates-grid">
+
+      <article class="date-card featured">
+        <div class="date-ribbon">⭐ À la une</div>
+        <div class="date-card-header">
+          <span class="date-tag">Cabaret</span>
+          <h3>Ami·e·s pour la vie</h3>
+        </div>
+        <p class="date-desc">Une agence de location d'ami·e·s sur-mesure… et vous êtes les clients. Le public profile, la troupe improvise la parfaite amitié.</p>
+        <div class="date-meta">
+          <div class="date-meta-row"><div class="date-icon">📅</div>Vendredi 19 juin 2026 — 20h</div>
+          <div class="date-meta-row"><div class="date-icon">📍</div>La Voyageuse, Nancy</div>
+          <div class="date-meta-row"><div class="date-icon">🎟</div>8 € / 5 € réduit</div>
+        </div>
+        <div class="date-card-footer">
+          <a href="#" class="btn btn-red btn-full">→ Réserver ma place</a>
+        </div>
+      </article>
+
+      <article class="date-card">
+        <div class="date-card-header">
+          <span class="date-tag">Spectacle</span>
+          <h3>Sauvages !</h3>
+        </div>
+        <p class="date-desc">Vos frustrations du quotidien deviennent des histoires improvisées complètement dingues. Humour noir et absurde garanti.</p>
+        <div class="date-meta">
+          <div class="date-meta-row"><div class="date-icon">📅</div>Samedi 11 juillet 2026 — 21h</div>
+          <div class="date-meta-row"><div class="date-icon">📍</div>MJC Bazin, Nancy</div>
+          <div class="date-meta-row"><div class="date-icon">🎟</div>6 € / 4 € réduit</div>
+        </div>
+        <div class="date-card-footer">
+          <a href="#" class="btn btn-red btn-full">→ Réserver ma place</a>
+        </div>
+      </article>
+
+      <article class="date-card">
+        <div class="date-card-header">
+          <span class="date-tag">Match d'impro</span>
+          <h3>Catégorique !</h3>
+        </div>
+        <p class="date-desc">Des catégories, des thèmes imposés, un arbitre impitoyable — et les histoires les plus loufoques possibles.</p>
+        <div class="date-meta">
+          <div class="date-meta-row"><div class="date-icon">📅</div>Vendredi 5 septembre 2026 — 20h30</div>
+          <div class="date-meta-row"><div class="date-icon">📍</div>Le Motel, Nancy</div>
+          <div class="date-meta-row"><div class="date-icon">🎟</div>7 € / 5 € réduit</div>
+        </div>
+        <div class="date-card-footer">
+          <a href="#" class="btn btn-red btn-full">→ Réserver ma place</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Nos formats signature</h2>
+  <p>Trois formats, une seule règle : rien n'est préparé.</p>
+</div>
+
+<section class="page-section">
+  <div class="container">
+    <h2 class="section-title">🎭 Nos formats</h2>
+    <div class="spectacles-grid">
+
+      <div class="spectacle-card">
+        <div class="spectacle-banner banner-match">🥊</div>
+        <div class="spectacle-content">
+          <div class="spectacle-type">Format compétition</div>
+          <h3>Match d'impro</h3>
+          <p>Deux équipes s'affrontent sur des thèmes donnés par le public. Un arbitre impitoyable tranche. Le tout en direct, sans filet, sans script.</p>
+          <div class="spectacle-meta">
+            <div class="spectacle-meta-row">⏱ Durée : 1h30 environ</div>
+            <div class="spectacle-meta-row">👥 Public : à partir de 8 ans</div>
+            <div class="spectacle-meta-row">🎟 Tarif : 7–10 €</div>
+          </div>
+          <a href="contact.html" class="btn btn-yellow">Nous programmer</a>
+        </div>
+      </div>
+
+      <div class="spectacle-card">
+        <div class="spectacle-banner banner-cabaret">🎪</div>
+        <div class="spectacle-content">
+          <div class="spectacle-type">Format court</div>
+          <h3>Le Cabaret</h3>
+          <p>Sketches improvisés enchaînés à toute vitesse sur vos suggestions. Punchy, énergique, totalement imprévisible. Le chaos créatif à l'état pur.</p>
+          <div class="spectacle-meta">
+            <div class="spectacle-meta-row">⏱ Durée : 1h environ</div>
+            <div class="spectacle-meta-row">👥 Public : à partir de 12 ans</div>
+            <div class="spectacle-meta-row">🎟 Tarif : 5–8 €</div>
+          </div>
+          <a href="contact.html" class="btn btn-yellow">Nous programmer</a>
+        </div>
+      </div>
+
+      <div class="spectacle-card">
+        <div class="spectacle-banner banner-long">🎬</div>
+        <div class="spectacle-content">
+          <div class="spectacle-type">Format long</div>
+          <h3>Le Spectacle</h3>
+          <p>Un titre, un thème, une heure de théâtre improvisé cohérent. Nos formats longs explorent des univers narratifs entiers nés du néant.</p>
+          <div class="spectacle-meta">
+            <div class="spectacle-meta-row">⏱ Durée : 1h–1h30</div>
+            <div class="spectacle-meta-row">👥 Public : à partir de 14 ans</div>
+            <div class="spectacle-meta-row">🎟 Tarif : 6–10 €</div>
+          </div>
+          <a href="contact.html" class="btn btn-yellow">Nous programmer</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="main-footer"></footer>
+<script src="scripts.js"></script>
+<script>initPage('spectacles.html');</script>
 </body>
 </html>

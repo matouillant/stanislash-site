@@ -1,35 +1,188 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StaniSlash | Accueil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaniSlash — La troupe qui s'lâche !</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="main-header"></header>
-    <main>
-        <section>
-            <h1>L'ART DE L'IMPRÉVU !</h1>
-            <div class="grid-2">
-                <div>
-                    <h2>FIL D'ACTU</h2>
-                    <div class="card">
-                        <h3>Dernier Cabaret de la saison</h3>
-                        <p>Merci à tous pour cette année incroyable ! On se retrouve en septembre pour de nouvelles aventures.</p>
-                    </div>
-                </div>
-                <div style="text-align: center;">
-                    <img src="Stan.jpg" style="max-width: 80%; border-radius: 20px; border: 5px solid var(--brand-red);">
-                    <p>Rejoignez la troupe la plus déjantée de Nancy.</p>
-                    <a href="spectacles.html" class="btn">VOIR LES DATES</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="main-footer"></footer>
-    <script src="scripts.js"></script>
-    <script>initPage('index.html');</script>
+<header id="main-header"></header>
+
+<section class="hero">
+  <div class="hero-eyebrow">Théâtre d'improvisation depuis 2012 · Nancy</div>
+  <h1>L'ART DE<em>L'IMPRÉVU !</em></h1>
+  <p class="hero-desc">Des histoires inventées sur le vif, avec vous, pour vous, grâce à vous. La troupe qui s'lâche.</p>
+  <div class="hero-actions">
+    <a href="spectacles.html" class="btn btn-red">🎟 Voir les dates</a>
+    <a href="troupe.html" class="btn btn-outline">Découvrir la troupe</a>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#FEF9EE"/>
+  </svg>
+</section>
+
+<!-- PROCHAINES DATES -->
+<section class="dates-section">
+  <div class="container">
+    <h2 class="section-title">🗓 Prochaines dates</h2>
+    <div class="dates-grid">
+
+      <article class="date-card featured">
+        <div class="date-ribbon">⭐ À la une</div>
+        <div class="date-card-header">
+          <span class="date-tag">Cabaret</span>
+          <h3>Ami·e·s pour la vie</h3>
+        </div>
+        <p class="date-desc">Une agence de location d'ami·e·s sur-mesure… et vous êtes les clients. Le public profile, la troupe improvise la parfaite amitié.</p>
+        <div class="date-meta">
+          <div class="date-meta-row"><div class="date-icon">📅</div>Vendredi 19 juin 2026 — 20h</div>
+          <div class="date-meta-row"><div class="date-icon">📍</div>La Voyageuse, Nancy</div>
+          <div class="date-meta-row"><div class="date-icon">🎟</div>8 € / 5 € réduit</div>
+        </div>
+        <div class="date-card-footer">
+          <a href="#" class="btn btn-red btn-full">→ Réserver ma place</a>
+        </div>
+      </article>
+
+      <article class="date-card">
+        <div class="date-card-header">
+          <span class="date-tag">Spectacle</span>
+          <h3>Sauvages !</h3>
+        </div>
+        <p class="date-desc">Vos frustrations du quotidien deviennent des histoires improvisées complètement dingues. Humour noir et absurde garanti.</p>
+        <div class="date-meta">
+          <div class="date-meta-row"><div class="date-icon">📅</div>Samedi 11 juillet 2026 — 21h</div>
+          <div class="date-meta-row"><div class="date-icon">📍</div>MJC Bazin, Nancy</div>
+          <div class="date-meta-row"><div class="date-icon">🎟</div>6 € / 4 € réduit</div>
+        </div>
+        <div class="date-card-footer">
+          <a href="#" class="btn btn-red btn-full">→ Réserver ma place</a>
+        </div>
+      </article>
+
+      <article class="date-card">
+        <div class="date-card-header">
+          <span class="date-tag">Match d'impro</span>
+          <h3>Catégorique !</h3>
+        </div>
+        <p class="date-desc">Des catégories, des thèmes imposés, un arbitre impitoyable — et les histoires les plus loufoques possibles. Un classique Stanislash.</p>
+        <div class="date-meta">
+          <div class="date-meta-row"><div class="date-icon">📅</div>Vendredi 5 septembre 2026 — 20h30</div>
+          <div class="date-meta-row"><div class="date-icon">📍</div>Le Motel, Nancy</div>
+          <div class="date-meta-row"><div class="date-icon">🎟</div>7 € / 5 € réduit</div>
+        </div>
+        <div class="date-card-footer">
+          <a href="#" class="btn btn-red btn-full">→ Réserver ma place</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Tous nos formats de spectacle</h2>
+  <p>Matchs d'impro, cabarets, formats longs — la Stanislash a toujours quelque chose en prépa.</p>
+  <div class="cta-btns">
+    <a href="spectacles.html" class="btn btn-red">Voir tous les spectacles</a>
+    <a href="https://www.facebook.com/lastanislash/" class="btn btn-white">📘 Suivre sur Facebook</a>
+  </div>
+</div>
+
+<!-- LA TROUPE (aperçu) -->
+<section class="members-section">
+  <div class="container">
+    <h2 class="section-title section-title-light">🎭 Les Slasheurs</h2>
+    <div class="members-grid">
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-1"><span>🦁</span></div>
+        <div class="member-info">
+          <h3>Sophie M.</h3>
+          <div class="member-role">Co-fondatrice</div>
+          <p class="member-bio">La force tranquille. Capable d'un accent russe crédible en 2 secondes.</p>
+          <span class="member-power">⚡ Accents</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-2"><span>🥁</span></div>
+        <div class="member-info">
+          <h3>Marc D.</h3>
+          <div class="member-role">Briseur de 4ème mur</div>
+          <p class="member-bio">Expert en bruitages et chutes totalement improbables. 400 matchs au compteur.</p>
+          <span class="member-power">⚡ Bruitage</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-3"><span>🌪️</span></div>
+        <div class="member-info">
+          <h3>Inès R.</h3>
+          <div class="member-role">Deus Ex Machina</div>
+          <p class="member-bio">Joue une pieuvre, un notaire et un aspirateur dans la même scène.</p>
+          <span class="member-power">⚡ Physique</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-4"><span>🎩</span></div>
+        <div class="member-info">
+          <h3>Thomas B.</h3>
+          <div class="member-role">Maître des genres</div>
+          <p class="member-bio">Transforme n'importe quelle scène en western, polar ou tragédie shakespearienne.</p>
+          <span class="member-power">⚡ Narration</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-5"><span>🌈</span></div>
+        <div class="member-info">
+          <h3>Léa V.</h3>
+          <div class="member-role">Cheffe de gag</div>
+          <p class="member-bio">Spécialiste du "oui et" à toute épreuve. Aucune réplique ne la déstabilise.</p>
+          <span class="member-power">⚡ Réactivité</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-6"><span>🧲</span></div>
+        <div class="member-info">
+          <h3>Julien F.</h3>
+          <div class="member-role">Arbitre & Meneur</div>
+          <p class="member-bio">Gère le public, les catégories et les débordements avec une impassibilité légendaire.</p>
+          <span class="member-power">⚡ Gestion public</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-7"><span>🎸</span></div>
+        <div class="member-info">
+          <h3>Clara N.</h3>
+          <div class="member-role">Musicienne live</div>
+          <p class="member-bio">Accompagne les scènes en direct. Piano, ukulélé, et si besoin, kazoo.</p>
+          <span class="member-power">⚡ Musique</span>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-avatar m-bg-8"><span>🚀</span></div>
+        <div class="member-info">
+          <h3>Romain G.</h3>
+          <div class="member-role">Recrue de choc</div>
+          <p class="member-bio">Benjamine de la troupe. Surpasse les vétérans. Détesté affectueusement.</p>
+          <span class="member-power">⚡ Énergie</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="main-footer"></footer>
+<script src="scripts.js"></script>
+<script>initPage('index.html');</script>
 </body>
 </html>

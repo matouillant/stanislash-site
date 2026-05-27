@@ -1,46 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StaniSlash | Contact</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaniSlash | Contact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="main-header"></header>
-    <main>
-        <section>
-            <h1>CONTACT</h1>
-            <div class="grid-2">
-                <div>
-                    <h2>ÉCRIVEZ-NOUS !</h2>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label>NOM</label>
-                            <input type="text" placeholder="Votre nom">
-                        </div>
-                        <div class="form-group">
-                            <label>EMAIL</label>
-                            <input type="email" placeholder="votre@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label>MESSAGE</label>
-                            <textarea rows="5" placeholder="Dites-nous tout..."></textarea>
-                        </div>
-                        <button type="submit" class="btn">ENVOYER</button>
-                    </form>
-                </div>
-                <div style="text-align: center; padding: 20px;">
-                    <div style="font-size: 5rem;">✉️</div>
-                    <p>Pour toute demande de spectacle, d'atelier ou juste pour nous dire bonjour !</p>
-                    <p><strong>contact@stanislash-impro.fr</strong></p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="main-footer"></footer>
-    <script src="scripts.js"></script>
-    <script>initPage('contact.html');</script>
+<header id="main-header"></header>
+
+<div class="page-hero">
+  <h1>CONTACT</h1>
+  <p>Pour un spectacle, un stage, une collaboration — ou juste nous dire bonjour.</p>
+  <svg class="page-wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,60 L0,60 Z" fill="#FEF9EE"/>
+  </svg>
+</div>
+
+<section class="page-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Formulaire -->
+      <div class="contact-form-card">
+        <h2 class="section-title" style="margin-bottom: 24px;">✉️ Écrivez-nous</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Sophie Dupont" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="sujet">Objet</label>
+            <select id="sujet" name="sujet">
+              <option value="">Choisir un objet…</option>
+              <option value="spectacle">Programmer un spectacle</option>
+              <option value="stage">Stage de formation</option>
+              <option value="rejoindre">Rejoindre la troupe</option>
+              <option value="presse">Presse / partenariat</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Dites-nous tout…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-red" style="width: 100%; font-size: 1.1rem; padding: 13px;">Envoyer le message</button>
+        </form>
+      </div>
+
+      <!-- Infos -->
+      <div class="contact-info">
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📧</div>
+          <div class="contact-info-text">
+            <h4>Par email</h4>
+            <p><a href="mailto:contact@stanislash.org">contact@stanislash.org</a><br>Réponse sous 48h en général.</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📘</div>
+          <div class="contact-info-text">
+            <h4>Facebook</h4>
+            <p>Suivez nos actualités et événements sur <a href="https://www.facebook.com/lastanislash/" target="_blank">notre page Facebook</a>.</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📍</div>
+          <div class="contact-info-text">
+            <h4>Où nous trouver</h4>
+            <p>Nous répétons à Vandœuvre-lès-Nancy (54). Nos spectacles ont lieu dans différentes salles du Grand Nancy.</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">🎓</div>
+          <div class="contact-info-text">
+            <h4>Stages d'impro</h4>
+            <p>On organise régulièrement des stages pour initier à l'improvisation. Écrivez-nous pour les prochaines dates !</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="main-footer"></footer>
+<script src="scripts.js"></script>
+<script>
+  initContactForm();
+  initPage('contact.html');
+</script>
 </body>
 </html>
