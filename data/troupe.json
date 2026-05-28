@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nom": "Sophie M.",
+    "role": "Co-fondatrice",
+    "depuis": "2012",
+    "emoji": "🦁",
+    "bg": "m-bg-1",
+    "bio_courte": "La force tranquille. Capable d'un accent russe crédible en 2 secondes.",
+    "bio_longue": "La force tranquille de la troupe. Capable d'un accent russe crédible en 2 secondes chrono, et d'une présence scénique qui remplit n'importe quelle salle. Co-fondatrice de la Stanislash, elle veille à l'âme de la troupe depuis les débuts.",
+    "pouvoir": "Accents",
+    "photo": ""
+  },
+  {
+    "id": 2,
+    "nom": "Marc D.",
+    "role": "Briseur de 4ème mur",
+    "depuis": "2013",
+    "emoji": "🥁",
+    "bg": "m-bg-2",
+    "bio_courte": "Expert en bruitages et chutes improbables. 400 matchs au compteur.",
+    "bio_longue": "Expert en bruitages et chutes totalement improbables. 400 matchs au compteur, toujours debout, jamais à court d'idée saugrenue. Sa spécialité : briser le 4ème mur exactement quand le public ne s'y attend pas.",
+    "pouvoir": "Bruitage",
+    "photo": ""
+  },
+  {
+    "id": 3,
+    "nom": "Inès R.",
+    "role": "Deus Ex Machina",
+    "depuis": "2015",
+    "emoji": "🌪️",
+    "bg": "m-bg-3",
+    "bio_courte": "Joue une pieuvre, un notaire et un aspirateur dans la même scène.",
+    "bio_longue": "Elle peut jouer une pieuvre, un notaire et un aspirateur dans la même scène. Son corps est un instrument de chaos très précis. Jamais à cours de propositions, toujours à l'origine des rebondissements les plus inattendus.",
+    "pouvoir": "Physique",
+    "photo": ""
+  },
+  {
+    "id": 4,
+    "nom": "Thomas B.",
+    "role": "Maître des genres",
+    "depuis": "2014",
+    "emoji": "🎩",
+    "bg": "m-bg-4",
+    "bio_courte": "Transforme n'importe quelle scène en western, polar ou tragédie shakespearienne.",
+    "bio_longue": "Transforme n'importe quelle scène en western, polar ou tragédie shakespearienne. Les genres n'ont aucun secret pour lui. Il lui suffit d'une cape imaginaire et d'un regard pour changer radicalement l'atmosphère d'une scène.",
+    "pouvoir": "Narration",
+    "photo": ""
+  },
+  {
+    "id": 5,
+    "nom": "Léa V.",
+    "role": "Cheffe de gag",
+    "depuis": "2016",
+    "emoji": "🌈",
+    "bg": "m-bg-5",
+    "bio_courte": "Spécialiste du oui-et à toute épreuve. Rien ne la déstabilise.",
+    "bio_longue": "Spécialiste du \"oui et\" à toute épreuve. Aucune réplique ne la déstabilise. Elle accepte tout, construit encore plus, et c'est souvent terriblement drôle. Son énergie positive est contagieuse même dans les scènes les plus improbables.",
+    "pouvoir": "Réactivité",
+    "photo": ""
+  },
+  {
+    "id": 6,
+    "nom": "Julien F.",
+    "role": "Arbitre & Meneur",
+    "depuis": "2013",
+    "emoji": "🧲",
+    "bg": "m-bg-6",
+    "bio_courte": "Gère le public et les débordements avec une impassibilité légendaire.",
+    "bio_longue": "Gère le public, les catégories et les débordements avec une impassibilité légendaire. Le seul qui ne rit jamais sur scène — et c'est ce qui le rend si drôle. Maître de cérémonie redouté, adoré du public.",
+    "pouvoir": "Gestion public",
+    "photo": ""
+  },
+  {
+    "id": 7,
+    "nom": "Clara N.",
+    "role": "Musicienne live",
+    "depuis": "2018",
+    "emoji": "🎸",
+    "bg": "m-bg-7",
+    "bio_courte": "Accompagne les scènes en direct. Piano, ukulélé, et si besoin, kazoo.",
+    "bio_longue": "Accompagne les scènes en direct et improvise la bande originale au fur et à mesure. Piano, ukulélé, et si la situation l'exige, kazoo. Sa musique donne une dimension supplémentaire à chaque spectacle.",
+    "pouvoir": "Musique",
+    "photo": ""
+  },
+  {
+    "id": 8,
+    "nom": "Romain G.",
+    "role": "Recrue de choc",
+    "depuis": "2022",
+    "emoji": "🚀",
+    "bg": "m-bg-8",
+    "bio_courte": "Benjamine de la troupe. Surpasse les vétérans. Détesté affectueusement.",
+    "bio_longue": "Benjamine de la troupe. Surpasse régulièrement les vétérans. Détesté affectueusement par tous les anciens qui ne comprennent pas comment il est déjà aussi à l'aise sur scène après si peu de temps.",
+    "pouvoir": "Énergie",
+    "photo": ""
+  }
+]

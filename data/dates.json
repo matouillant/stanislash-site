@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nom": "Ami·e·s pour la vie",
+    "type": "Cabaret",
+    "featured": true,
+    "description": "Une agence de location d'ami·e·s sur-mesure… et vous êtes les clients. Le public profile, la troupe improvise la parfaite amitié.",
+    "date": "2026-06-19",
+    "heure": "20h00",
+    "lieu": {
+      "nom": "La Voyageuse",
+      "ville": "Nancy",
+      "maps": "https://maps.google.com/?q=La+Voyageuse+Nancy"
+    },
+    "tarif": "8 € / 5 € réduit",
+    "reservation": "https://www.helloasso.com/stanislash"
+  },
+  {
+    "id": 2,
+    "nom": "Sauvages !",
+    "type": "Spectacle",
+    "featured": false,
+    "description": "Vos frustrations du quotidien deviennent des histoires improvisées complètement dingues. Humour noir et absurde garanti.",
+    "date": "2026-07-11",
+    "heure": "21h00",
+    "lieu": {
+      "nom": "MJC Bazin",
+      "ville": "Nancy",
+      "maps": "https://maps.google.com/?q=MJC+Bazin+Nancy"
+    },
+    "tarif": "6 € / 4 € réduit",
+    "reservation": "https://www.helloasso.com/stanislash"
+  },
+  {
+    "id": 3,
+    "nom": "Catégorique !",
+    "type": "Match d'impro",
+    "featured": false,
+    "description": "Des catégories, des thèmes imposés, un arbitre impitoyable — et les histoires les plus loufoques possibles. Un classique Stanislash.",
+    "date": "2026-09-05",
+    "heure": "20h30",
+    "lieu": {
+      "nom": "Le Motel",
+      "ville": "Nancy",
+      "maps": "https://maps.google.com/?q=Le+Motel+Nancy"
+    },
+    "tarif": "7 € / 5 € réduit",
+    "reservation": "https://www.helloasso.com/stanislash"
+  }
+]

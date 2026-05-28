@@ -912,3 +912,37 @@ footer {
   .members-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .galerie-grid { grid-template-columns: 1fr; }
 }
+
+/* ─── LOGO IMAGE ─── */
+.logo-zone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.3));
+  transition: transform 0.2s;
+}
+
+.logo-zone:hover .logo-img { transform: rotate(-4deg) scale(1.05); }
+
+/* ─── LIEU LINK ─── */
+.lieu-link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s;
+}
+.lieu-link:hover { color: var(--red); }
+
+/* ─── MEMBER CARD FULL (troupe page) ─── */
+.member-card-full:nth-child(odd)  { transform: rotate(-1.2deg); }
+.member-card-full:nth-child(even) { transform: rotate(1.2deg); }
+.member-card-full:hover { transform: rotate(0deg) scale(1.04) !important; }
